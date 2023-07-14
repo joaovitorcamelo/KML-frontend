@@ -1,0 +1,84 @@
+.send_page {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+.send_content {
+    position: relative;
+    top: 100px;
+    height: calc(100vh - 100px);
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.send_add {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 156px;
+}
+
+.send_content p {
+    letter-spacing: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0 4px;
+}
+
+.send_add label input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    
+    box-sizing: border-box;
+    width: 250px;
+    height: 30px;
+    border-style: solid;
+    border-color: #DADADA;
+    border-width: 1px;
+    border-radius: 7px;
+}
+
+.send_list{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 280px;
+}
+
+.send_list ul {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 5px 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    box-sizing: border-box;
+    width: 250px;
+    height: 120px;
+    border-style: solid;
+    border-color: #DADADA;
+    border-width: 1px;
+    border-radius: 7px;
+
+    list-style: none;
+}
+
+.send_list li {
+    &:hover{
+        background-color: #DADADA;
+    }
+}

@@ -1,0 +1,28 @@
+button {
+
+    position: relative;
+
+    box-sizing: border-box;
+    width: 250px;
+    height: 75px;
+    padding: 10px;
+    border-style: hidden;
+    border-width: 2px;
+    border-radius: 7px;
+    border-color: white;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    
+    box-shadow: 0 2px 10px #DADADA;
+
+    &:hover {
+        border-style: solid;
+        border-color: black;
+        cursor: pointer;
+    }
+}
