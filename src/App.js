@@ -11,9 +11,9 @@ function App() {
     <div className="mainDiv">
         <Routes>
           <Route path="" element={<Login/>}/>
-          <Route path="main/" element={<Main/>}/>
-          <Route path="send/" element={<Send/>}/>
-          <Route path="delete/" element={<Delete/>}/>
+          <Route path="main/:email" element={<Main/>}/>
+          <Route path="send/:email" element={<Send/>}/>
+          <Route path="delete/:email" element={<Delete/>}/>
         </Routes>
     </div>
   );

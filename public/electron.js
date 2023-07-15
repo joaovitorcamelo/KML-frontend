@@ -15,10 +15,11 @@ let mainWindow;
 function createWindow() {
     // Criar a janela do browser.
     mainWindow = new BrowserWindow({
-        width: 300, 
-        height: 640, 
+        width: 350, 
+        height: 670, 
         icon: __dirname + '../public/OIG.ico',
         resizable: false,
+        autoHideMenuBar: true,
     });
     
 

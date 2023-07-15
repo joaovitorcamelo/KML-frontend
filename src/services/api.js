@@ -9,22 +9,22 @@ const http = axios.create(
 export const api = {
     login: async (email) => {
         let url = `auth?email=${email}`
-        let response = await http.get(url, {timeout: 120000, followRedirects: true});
+        let response = await http.get(url, {timeout: 120000});
         let authorizationURL = response.data.authorization_url;
-        return authorizationURL;
+        window.open(authorizationURL, '_blank');
     },
-    create: async () => {
-        let response = await http.get('create/');
+    create: async (email) => {
+        let response = await http.get(`create?email=${email}`, {timeout: 3600000});
         return response.data;
     },
-    send: async (dre) => {
-        let url = `send/${dre}/`;
-        let response = await http.get(url);
+    send: async (dre, email) => {
+        let url = `send/${dre}?email=${email}`;
+        let response = await http.get(url, {timeout: 3600000});
         return response.data;
     },
-    delete: async (dre) => {
-        let url = `delete/${dre}/`;
-        let response = await http.get(url);
+    delete: async (dre, email) => {
+        let url = `delete/${dre}?email=${email}`;
+        let response = await http.get(url, {timeout: 3600000});
         return response.data;
     }
 }

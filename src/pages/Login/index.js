@@ -14,10 +14,11 @@ export const Login = () => {
     const [modalTitle, setModalTitle] = useState("Login efetuado");
     const [modalMessage, setModalMessage] = useState("Seja bem-vindo! Seu login foi efetuado com sucesso.");
     const [errorLogin, setErrorLogin] = useState(false);
+
     const navigate = useNavigate();
 
     const handleCloseModal = () => {
-        if(!errorLogin) navigate('/main');
+        if(!errorLogin) navigate(`/main/${emailInput}`);
         else setModal(false);
     }
 
@@ -26,7 +27,6 @@ export const Login = () => {
         setErrorLogin(false);
         try {
             let json = await api.login(emailInput);
-            {/* fazendo o redirecionamento manualmente com o json...*/}
             setLoading(false);
             setModalTitle("Login efetuado");
             setModalMessage("Seja bem-vindo! Seu login foi efetuado com sucesso.");
