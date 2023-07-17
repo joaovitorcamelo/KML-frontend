@@ -1,15 +1,13 @@
 {
   "name": "KML",
   "productName": "KML",
-  "version": "0.1.0",
+  "version": "1.0.1",
   "private": true,
-  "description": "Automate your sheets tasks.",
-  "author": {
-    "name": "João Camelo",
-    "email": "joaocameloalmeida@gmail.com",
-    "url": "https://linkedin.com/in/joaovitorcamelo"
-  },
+  "description": "Automate your sheets tasks. App done by João Vitor Camelo.\nThis a test version.",
+  "author": "João Camelo <joaocameloalmeida@gmail.com> (https://www.linkedin.com/in/joaovitorcamelo/)",
+  "license": "MIT",
   "homepage": "./",
+  "keywords": "KML",
   "build": {
     "win": {
       "icon": "/public/OIG.ico"
