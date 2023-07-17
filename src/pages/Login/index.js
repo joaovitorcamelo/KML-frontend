@@ -66,7 +66,7 @@ export const Login = () => {
                     </label>
                     <Button 
                         className = {styles.login_button} 
-                        color="#D2C1A6" 
+                        color="#B2E6F8" 
                         value="login"
                         type = "submit"
                     />

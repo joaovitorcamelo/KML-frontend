@@ -86,7 +86,7 @@ export const Send = () => {
                             onChange={(e) => setDRE(e.target.value)}
                             />
                         </label>
-                        <Button color="#D2C1A6" onClick={addItemList} value="adicionar"/>
+                        <Button color="#B2E6F8" onClick={addItemList} value="adicionar"/>
                     </div>
                     <div className={styles.send_list}>
                         <label>
